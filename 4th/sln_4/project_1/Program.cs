@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,9 +13,9 @@ namespace project_1
             //입력
             
             String input = Console.ReadLine();
-            //Console.WriteLine(input);
+            Console.WriteLine(input);
             Console.WriteLine(input + input); // 문자열 연결연산자
-            //Console.WriteLine("input" + "input");
+            Console.WriteLine("input" + "input");
             Console.WriteLine();
 
             //자료형 변환
@@ -33,7 +33,7 @@ namespace project_1
             //문자열을 숫자로 변환할 시 오류 발생 주의
 
             String numberString = "52273"; 
-            //int intNumber = (int)numberString;
+            //int intNumber = (int)numberString; // 문자열 변수를 int로 변환시 오류 발생
 
             //문자열을 숫자로 변환 : Parse
             Console.WriteLine(int.Parse("52"));
@@ -43,7 +43,7 @@ namespace project_1
 
             Console.WriteLine(double.Parse("52.273").GetType());
 
-            Console.WriteLine(int.Parse("abc"));
+            //Console.WriteLine(int.Parse("abc")); // 숫자가 아닌 문자로 된 문자열을 int로 뱐환하면 오류 발생
 
             //다른 자료형을 문자열로 변환
             Console.WriteLine(52.ToString());
